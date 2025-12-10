@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured News Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #f0ad4e; /* Yellow line */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            color: #333;
+            margin: 0;
+        }
+
+        .nav-arrows button {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .nav-arrows button:hover {
+            background-color: #eee;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-content {
+            padding: 15px;
+            position: relative;
+        }
+
+        .category {
+            background-color: #f0ad4e; /* Yellow background */
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8em;
+            font-weight: bold;
+            border-radius: 3px;
+            position: absolute;
+            top: -10px; /* Position it overlapping the image/content boundary */
+            left: 15px;
+        }
+
+        .date {
+            display: block;
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 15px; /* Space below the category tag */
+        }
+
+        .card-content p {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FEATURED NEWS</h1>
+            <div class="nav-arrows">
+                <button>&lt;</button>
+                <button>&gt;</button>
+            </div>
+        </header>
+
+        <main class="news-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/326235/pexels-photo-326235.jpeg?cs=srgb&dl=pexels-pixabay-326235.jpg&fm=jpg" alt="News Image 1">
+                <div class="card-content">
+                    <span class="category">BUSINESS</span>
+                    <span class="date">Jan 01, 2045</span>
+                    <p>LOREM IPSUM DOLOR SIT AMET ELIT...</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/326235/pexels-photo-326235.jpeg?cs=srgb&dl=pexels-pixabay-326235.jpg&fm=jpg" alt="News Image 2">
+                <div class="card-content">
+                    <span class="category">BUSINESS</span>
+                    <span class="date">Jan 01, 2045</span>
+                    <p>LOREM IPSUM DOLOR SIT AMET ELIT...</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/326235/pexels-photo-326235.jpeg?cs=srgb&dl=pexels-pixabay-326235.jpg&fm=jpg" alt="News Image 3">
+                <div class="card-content">
+                    <span class="category">BUSINESS</span>
+                    <span class="date">Jan 01, 2045</span>
+                    <p>LOREM IPSUM DOLOR SIT AMET ELIT...</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/326235/pexels-photo-326235.jpeg?cs=srgb&dl=pexels-pixabay-326235.jpg&fm=jpg" alt="News Image 4">
+                <div class="card-content">
+                    <span class="category">BUSINESS</span>
+                    <span class="date">Jan 01, 2045</span>
+                    <p>LOREM IPSUM DOLOR SIT AMET ELIT...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
